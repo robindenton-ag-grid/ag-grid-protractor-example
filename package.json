@@ -1,0 +1,23 @@
+{
+  "name": "ag-grid-protractor-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "ag-grid-testing": "0.0.2",
+    "dev-server": "0.0.2",
+    "jasmine": "^3.3.1",
+    "protractor": "^5.4.1",
+    "webdriver-manager": "^12.1.0"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/.bin/webdriver-manager update",
+    "test": "./node_modules/.bin/protractor conf.js",
+    "dev": "DEV_SERVER_PORT=4200 DEV_SERVER_ROOT=./public dev-server",
+    "wdm": "./node_modules/.bin/webdriver-manager start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
